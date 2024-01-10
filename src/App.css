@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+.nav {
+  display: flex;
+  gap: 18px;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+}
+li:hover {
+  font-size: 20px;
+}
