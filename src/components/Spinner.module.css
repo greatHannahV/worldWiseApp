@@ -6,7 +6,7 @@
 }
 
 .spinner {
-  width: 6rem;
+  width: 6em;
   height: 6rem;
   border-radius: 50%;
   background: conic-gradient(#0000 10%, var(--color-light--2));
