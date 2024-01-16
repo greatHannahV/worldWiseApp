@@ -2,7 +2,10 @@ import Spinner from './Spinner'
 import styles from './CountriesList.module.css'
 import Message from './Message'
 import CountryItem from './CountryItem'
-function Countries({ cities, isLoading }) {
+import { useCities } from '../contexts/CitiesContext'
+function Countries() {
+  const { cities, isLoading } = useCities()
+
   if (isLoading) return <Spinner />
   if (!cities.length) return <Message message="Add your first country" />
 
