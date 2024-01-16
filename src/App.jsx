@@ -10,8 +10,8 @@ import CityList from './components/CityList'
 import City from './components/City'
 import Form from './components/Form'
 import CountriesList from './components/CountriesList'
-import { CitiesProvider, useCities } from './contexts/CitiesContext'
-const BASE_URL = 'http://localhost:9000'
+import { CitiesProvider } from './contexts/CitiesContext'
+// const BASE_URL = 'http://localhost:9000'
 
 function App() {
   return (

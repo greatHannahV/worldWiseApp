@@ -1,33 +1,48 @@
 import { createContext, useState, useEffect, useContext } from 'react'
 
 const CitiesContext = createContext()
-const BASE_URL = 'http://localhost:9000'
+const BASE_URL = 'http://localhost:8000'
 
 function CitiesProvider({ children }) {
   const [cities, setCities] = useState([])
   const [isLoading, setIsLoading] = useState(false)
-  useEffect(
-    function () {
-      async function fetchCities() {
-        try {
-          setIsLoading(true)
-          const res = await fetch(`${BASE_URL}/cities`)
-          const data = await res.json()
-          // console.log(data)
-          setCities(data)
-        } catch {
-          alert('there was an error')
-        } finally {
-          setIsLoading(false)
-        }
+  const [currentCity, setCurrentCity] = useState({})
+
+  useEffect(function () {
+    async function fetchCities() {
+      try {
+        setIsLoading(true)
+        const res = await fetch(`${BASE_URL}/cities`)
+        const data = await res.json()
+        // console.log(data)
+        setCities(data)
+      } catch {
+        alert('there was an error')
+      } finally {
+        setIsLoading(false)
       }
-      fetchCities()
-    },
-    [setCities],
-  )
+    }
+    fetchCities()
+  }, [])
+
+  async function getCity(id) {
+    try {
+      setIsLoading(true)
+      const res = await fetch(`${BASE_URL}/cities/${id}`)
+      const data = await res.json()
+      setCurrentCity(data)
+    } catch (error) {
+      console.log('Error loading data:', error)
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
   return (
     <div>
-      <CitiesContext.Provider value={{ cities, setCities, isLoading }}>
+      <CitiesContext.Provider
+        value={{ cities, isLoading, currentCity, getCity }}
+      >
         {children}
       </CitiesContext.Provider>
     </div>
