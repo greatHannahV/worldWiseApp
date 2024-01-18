@@ -1,40 +1,52 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": "73930385"
-    },
-    {
-      "cityName": "Madrid",
+      "id": "5eb4",
+      "cityName": "Borriol",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "Spain",
+      "date": "2024-01-18T17:09:56.254Z",
+      "notes": "",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": "17806751"
+        "lat": "40.05929183908282",
+        "lng": "-0.06745353835838853"
+      }
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
+      "id": "d5ae",
+      "cityName": "Sofia",
+      "country": "Bulgaria",
+      "emoji": "🇧🇬",
+      "date": "2024-01-18T17:10:02.450Z",
+      "notes": "",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": "98443197"
+        "lat": "42.674562328939345",
+        "lng": "23.319616012447863"
+      }
+    },
+    {
+      "id": "5069",
+      "cityName": "Kostinbrod",
+      "country": "Bulgaria",
+      "emoji": "🇧🇬",
+      "date": "2024-01-18T17:10:04.937Z",
+      "notes": "",
+      "position": {
+        "lat": "42.79247084936446",
+        "lng": "23.196149912144904"
+      }
+    },
+    {
+      "id": "cf8b",
+      "cityName": "Gevgelija",
+      "country": "North Macedonia",
+      "emoji": "🇲🇰",
+      "date": "2024-01-18T17:10:11.628Z",
+      "notes": "",
+      "position": {
+        "lat": "41.186051576453565",
+        "lng": "22.233373665432566"
+      }
     }
   ]
 }
