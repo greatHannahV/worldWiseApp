@@ -13,39 +13,39 @@
       }
     },
     {
-      "id": "d5ae",
+      "id": "aee0",
       "cityName": "Sofia",
       "country": "Bulgaria",
       "emoji": "🇧🇬",
-      "date": "2024-01-18T17:10:02.450Z",
+      "date": "2024-01-19T14:20:34.521Z",
       "notes": "",
       "position": {
-        "lat": "42.674562328939345",
-        "lng": "23.319616012447863"
+        "lat": "42.790361950280925",
+        "lng": "23.39950561523438"
       }
     },
     {
-      "id": "5069",
-      "cityName": "Kostinbrod",
-      "country": "Bulgaria",
-      "emoji": "🇧🇬",
-      "date": "2024-01-18T17:10:04.937Z",
+      "id": "7985",
+      "cityName": "Castilruiz",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-19T14:20:54.592Z",
       "notes": "",
       "position": {
-        "lat": "42.79247084936446",
-        "lng": "23.196149912144904"
+        "lat": "41.86956082699455",
+        "lng": "-2.0379638671875004"
       }
     },
     {
-      "id": "cf8b",
-      "cityName": "Gevgelija",
-      "country": "North Macedonia",
-      "emoji": "🇲🇰",
-      "date": "2024-01-18T17:10:11.628Z",
+      "id": "66ca",
+      "cityName": "Benicassim",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-01-19T14:36:07.561Z",
       "notes": "",
       "position": {
-        "lat": "41.186051576453565",
-        "lng": "22.233373665432566"
+        "lat": "40.04128356064847",
+        "lng": "0.019226074218750003"
       }
     }
   ]
