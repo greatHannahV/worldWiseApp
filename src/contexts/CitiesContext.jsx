@@ -61,7 +61,7 @@ function reducer(state, action) {
   }
 }
 function CitiesProvider({ children }) {
-  const [{ cities, isLoading, currentCity }, dispatch] = useReducer(
+  const [{ cities, isLoading, currentCity, error }, dispatch] = useReducer(
     reducer,
     initialState,
   )
@@ -95,6 +95,7 @@ function CitiesProvider({ children }) {
   }, [])
 
   async function getCity(id) {
+    if (id === currentCity.id) return
     dispatch({ type: 'loading' })
 
     try {
@@ -170,6 +171,7 @@ function CitiesProvider({ children }) {
           cities,
           isLoading,
           currentCity,
+          error,
           getCity,
           createCity,
           deleteCity,
